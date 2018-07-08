@@ -1,0 +1,24 @@
+{
+  "name": "purescript-github-corners",
+  "homepage": "https://github.com/yehzhang/purescript-github-corners",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yehzhang/purescript-github-corners"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output",
+    "test"
+  ],
+  "dependencies": {
+    "purescript-smolder": "^11.0.0",
+    "purescript-css": "^4.0.0"
+  },
+  "devDependencies": {
+    "purescript-psci-support": "^4.0.0",
+    "purescript-spec": "^3.0.0"
+  }
+}
