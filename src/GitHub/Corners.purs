@@ -9,7 +9,7 @@ import Prelude hiding (top)
 import Text.Smolder.HTML (a, style)
 import Text.Smolder.HTML.Attributes (className, height, href, width)
 import Text.Smolder.HTML.Attributes (style) as A
-import Text.Smolder.Markup (Markup, Attribute, attribute, empty, text, (!))
+import Text.Smolder.Markup (Markup, attribute, empty, text, (!))
 import Text.Smolder.SVG (path, svg)
 import Text.Smolder.SVG.Attributes (d, viewBox)
 import Text.Smolder.SVG.Attributes (fill) as A
@@ -72,6 +72,7 @@ corner u bc oc p = a ! key "purescript-github-corner-toplevel"
     styleAttribute = A.style <<< fromMaybe "" <<< renderedInline <<< render
     fill = C.key $ fromString "fill"
     border = C.key $ fromString "border"
+    key = attribute "key"
 
 black :: Color
 black = fromInt 0x151513
@@ -84,6 +85,3 @@ red = fromInt 0xFD6C6C
 
 blue :: Color
 blue = fromInt 0x70B7FD
-
-key :: String -> Attribute
-key = attribute "key"
